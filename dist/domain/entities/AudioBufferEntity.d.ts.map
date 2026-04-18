@@ -1,1 +1,0 @@
-{"version":3,"file":"AudioBufferEntity.d.ts","sourceRoot":"","sources":["../../../src/domain/entities/AudioBufferEntity.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,iBAAiB;IAC9B,OAAO,EAAE,CAAC,MAAM,EAAE,EAAE,MAAM,EAAE,CAAC,CAAC;IAC9B,UAAU,EAAE,MAAM,CAAC;IACnB,QAAQ,CAAC,EAAE,MAAM,CAAC;IAClB,IAAI,CAAC,EAAE,MAAM,CAAC;IACd,YAAY,CAAC,EAAE,MAAM,CAAC;CACzB"}

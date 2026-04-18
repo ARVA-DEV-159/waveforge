@@ -1,0 +1,24 @@
+# Configuración y herramientas
+.vscode/
+.idea/
+*.log
+*.tsbuildinfo
+*.swp
+*.swo
+
+# Carpetas de desarrollo
+test/
+tests/
+__tests__/
+scripts/
+examples/
+coverage/
+docs/
+src/
+
+# No publicar lockfiles ni módulos
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
