@@ -1,9 +1,9 @@
-import { AudioBufferEntity } from "../domain/entities/AudioBufferEntity.js"
+import { AudioBuffer } from "../domain/entities/AudioBufferEntity.js"
 
 export class AudioUtils {
     constructor() { }
 
-    public static mergeBuffer(buffers: AudioBufferEntity[]): [number[], number[]] {
+    public static mergeBuffer(buffers: AudioBuffer[]): [number[], number[]] {
         const left: number[] = []
         const right: number[] = []
 

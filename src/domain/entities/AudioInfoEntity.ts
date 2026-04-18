@@ -1,4 +1,4 @@
-export interface AudioInfoEntity {
+export interface AudioInfo {
     path: string;
     name: string;
     format: string;

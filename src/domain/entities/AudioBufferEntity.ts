@@ -1,4 +1,4 @@
-export interface AudioBufferEntity {
+export interface AudioBuffer {
     samples: [number[], number[]];
     sampleRate: number;
     channels?: number;
