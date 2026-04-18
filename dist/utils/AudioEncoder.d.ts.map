@@ -1,0 +1,1 @@
+{"version":3,"file":"AudioEncoder.d.ts","sourceRoot":"","sources":["../../src/utils/AudioEncoder.ts"],"names":[],"mappings":"AAGA,qBAAa,YAAY;IAErB,MAAM,CAAC,MAAM,CACT,OAAO,EAAE,YAAY,EACrB,kBAAkB,EAAE,MAAM,EAC1B,gBAAgB,EAAE,MAAM,EACxB,QAAQ,EAAE,MAAM,EAChB,MAAM,EAAE,MAAM,GACf,OAAO,CAAC,IAAI,CAAC;CAoCnB"}
