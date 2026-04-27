@@ -8,6 +8,8 @@ test.ts
 *.tmp
 *.swp
 *.swo
+*.mp3
+*.png
 
 *.tgz
 *.tsbuildinfo
