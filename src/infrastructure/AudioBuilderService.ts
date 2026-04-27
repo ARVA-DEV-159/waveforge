@@ -1,5 +1,5 @@
-import { WriteAudioUc } from "../application/WriteAudioUc.js";
-import { ReadAudioUc } from "../application/ReadAudioUc.js";
+import { WriteAudioUc } from "../application/AudioBuilder/WriteAudioUc.js";
+import { ReadAudioUc } from "../application/AudioBuilder/ReadAudioUc.js";
 import { AudioBuffer } from "../domain/entities/AudioBufferEntity.js";
 import { AudioInfo } from "../domain/entities/AudioInfoEntity.js";
 import { AudioBuilderRepository } from "../domain/repositories/AudioBuilderRepository.js";

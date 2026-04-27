@@ -8,8 +8,8 @@ export class AudioUtils {
         const right: number[] = []
 
         for (const buff of buffers) {
-            left.push(...buff.samples[0])
-            right.push(...buff.samples[1])
+            left.push(...buff.samples.left)
+            right.push(...buff.samples.right)
         }
 
         return [left, right]

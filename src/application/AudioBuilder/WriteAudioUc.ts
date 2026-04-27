@@ -1,14 +1,14 @@
-import { AudioInfoEntity } from "../domain/entities/AudioInfoEntity.js";
-import { AudioBufferEntity } from "../domain/entities/AudioBufferEntity.js";
+import { AudioInfo } from "../../domain/entities/AudioInfoEntity.js";
+import { AudioBuffer } from "../../domain/entities/AudioBufferEntity.js";
 import path from "path";
-import { AudioUtils } from "../utils/AudioUtils.js";
-import { AudioEncoder } from "../utils/AudioEncoder.js";
+import { AudioUtils } from "../../utils/AudioUtils.js";
+import { AudioEncoder } from "../../utils/AudioEncoder.js";
 
 export class WriteAudioUc {
 
     public async execute(
-        buffers: AudioBufferEntity[],
-        data: AudioInfoEntity
+        buffers: AudioBuffer[],
+        data: AudioInfo
     ) {
 
         const output = path.join(
@@ -20,7 +20,7 @@ export class WriteAudioUc {
     }
 
     private async processBuffers(
-        buffers: AudioBufferEntity[],
+        buffers: AudioBuffer[],
         output: string,
         targetSampleRate: number = buffers[0].sampleRate
     ) {

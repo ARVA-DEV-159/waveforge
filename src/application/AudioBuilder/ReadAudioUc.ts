@@ -1,11 +1,11 @@
-import type { AudioBufferEntity } from "../domain/entities/AudioBufferEntity.js";
-import { AudioDecoder } from "../utils/AudioDecoder.js";
+import type { AudioBuffer } from "../../domain/entities/AudioBufferEntity.js";
+import { AudioDecoder } from "../../utils/AudioDecoder.js";
 
 export class ReadAudioUc {
 
     private decoder = new AudioDecoder()
 
-    public async execute(path: string): Promise<AudioBufferEntity[]> {
+    public async execute(path: string): Promise<AudioBuffer[]> {
 
         const { audioData, sampleRate, channels } =
             await this.decoder.decode(path)
@@ -51,11 +51,11 @@ export class ReadAudioUc {
         right: Float32Array,
         sampleRate: number,
         channels: number
-    ): AudioBufferEntity[] {
+    ): AudioBuffer[] {
 
         const samplesPerSecond = sampleRate
 
-        const result: AudioBufferEntity[] = []
+        const result: AudioBuffer[] = []
 
         const totalSamples = left.length
 
@@ -65,10 +65,10 @@ export class ReadAudioUc {
             const rightChunk = right.slice(i, i + samplesPerSecond)
 
             result.push({
-                samples: [
-                    Array.from(leftChunk),
-                    Array.from(rightChunk)
-                ],
+                samples: {
+                    left: Array.from(leftChunk),
+                    right: Array.from(rightChunk)
+                },
                 sampleRate,
                 channels,
                 size: leftChunk.length,

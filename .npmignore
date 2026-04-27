@@ -6,6 +6,8 @@
 *.swp
 *.swo
 
+test.ts
+
 # Carpetas de desarrollo
 test/
 tests/

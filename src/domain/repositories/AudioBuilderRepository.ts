@@ -1,7 +1,7 @@
-import { AudioBufferEntity } from "../entities/AudioBufferEntity.js";
-import { AudioInfoEntity } from "../entities/AudioInfoEntity.js";
+import { AudioBuffer } from "../entities/AudioBufferEntity.js";
+import { AudioInfo } from "../entities/AudioInfoEntity.js";
 
 export interface AudioBuilderRepository {
-    createWav(buffers: AudioBufferEntity[], data: AudioInfoEntity): Promise<void>;
-    readAudio(path: string): Promise<AudioBufferEntity[]>
+    createWav(buffers: AudioBuffer[], data: AudioInfo): Promise<void>;
+    readAudio(path: string): Promise<AudioBuffer[]>
 }

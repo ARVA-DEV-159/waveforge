@@ -1,5 +1,7 @@
+import { AudioSignal } from "./AudioSignalEntity.js";
+
 export interface AudioBuffer {
-    samples: [number[], number[]];
+    samples: AudioSignal;
     sampleRate: number;
     channels?: number;
     size?: number;
